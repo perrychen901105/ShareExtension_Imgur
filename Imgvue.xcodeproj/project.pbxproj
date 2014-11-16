@@ -20,7 +20,6 @@
 		833FDE7419C2B933003EB25E /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 83957685196928490033B974 /* UIImage+MultiFormat.m */; };
 		833FDE7519C2B933003EB25E /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 83957687196928490033B974 /* UIImage+WebP.m */; };
 		833FDE7619C2B933003EB25E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 83957689196928490033B974 /* UIImageView+WebCache.m */; };
-		8378193C19C2ACD600047EE7 /* ImgvueKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839576491969275D0033B974 /* ImgvueKit.framework */; };
 		838016B51990DA660026613B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838016B41990DA660026613B /* SwiftyJSON.swift */; };
 		838C8EBD1969EF150060B7C3 /* ImageFilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C8EBC1969EF150060B7C3 /* ImageFilterService.swift */; };
 		838C8EBF1969F5110060B7C3 /* ImgurImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C8EBE1969F5110060B7C3 /* ImgurImageViewController.swift */; };
@@ -90,6 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C4F11591A18CB2B009A781C /* Imgvue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Imgvue.entitlements; sourceTree = "<group>"; };
 		833FDE6919C2B5A7003EB25E /* Imgvue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Imgvue-Bridging-Header.h"; sourceTree = "<group>"; };
 		838016B41990DA660026613B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		838C8EBC1969EF150060B7C3 /* ImageFilterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFilterService.swift; sourceTree = "<group>"; };
@@ -216,6 +216,7 @@
 		839575B5196925690033B974 /* Imgvue */ = {
 			isa = PBXGroup;
 			children = (
+				2C4F11591A18CB2B009A781C /* Imgvue.entitlements */,
 				833FDE6819C2B504003EB25E /* Third Party */,
 				839575B8196925690033B974 /* AppDelegate.swift */,
 				83BE9943196A6134001E6999 /* Controllers */,
@@ -488,10 +489,10 @@
 				TargetAttributes = {
 					839575B2196925690033B974 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = X28LAA5D4H;
+						DevelopmentTeam = NAHQWNLE4V;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -743,6 +744,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Imgvue/Imgvue.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Imgvue/Info.plist;
@@ -758,6 +760,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Imgvue/Imgvue.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Imgvue/Info.plist;
